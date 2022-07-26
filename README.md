@@ -8,4 +8,6 @@ To use the snapshot functionality of the Amazon EBS CSI driver, you must install
 * [controller deployment](https://github.com/kubernetes-csi/external-snapshotter/blob/master/deploy/kubernetes/snapshot-controller/setup-snapshot-controller.yaml)
 * [VolumeSnapshotClass](https://gist.github.com/nsagark/be1c0a64bc7b2d44080dd9c6af4a53e6)
 
-Before backing and restoring gp3 volumes using `velero`, make sure above components are installed in your cluster 
+This repo consists of the files needed for deploying the CRD's, CR, RBAC, volumesnapshotclass nd the controller deployment. To deploy these components, create a git app in Nirmata and point it to this git repo. The git app in Nirmata needs to be deployed in the kube-system namespace
+
+ 
